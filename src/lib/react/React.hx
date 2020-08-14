@@ -65,6 +65,48 @@ extern class React
 	public static var Children:ReactChildren;
 
 	public static var version:String;
+
+	/** Hooks **/
+
+	/**
+		https://reactjs.org/docs/hooks-reference.html#useeffect
+	**/
+	public static function useEffect(func:Dynamic, deps:Array<Dynamic>=null):Dynamic;
+
+	/**
+		https://reactjs.org/docs/hooks-reference.html#usememo
+	**/
+	public static function useMemo(func:Dynamic, deps:Array<Dynamic>=null):Dynamic;
+
+	/**
+		https://reactjs.org/docs/hooks-reference.html#usestate
+	**/
+	public static function useState(initialState:Dynamic):Array<Dynamic>;
+
+	/**
+		https://reactjs.org/docs/hooks-reference.html#usecontext
+	**/
+	public static function useContext(myContext:Dynamic):Dynamic;
+
+	/**
+		https://reactjs.org/docs/hooks-reference.html#useref
+	**/
+	public static function useRef(ref:Dynamic):Dynamic;
+
+	/**
+		https://reactjs.org/docs/hooks-reference.html#useimperativehandle
+	**/
+	public static function useImperativeHandle(ref:Dynamic, createHandle:Dynamic, deps:Array<Dynamic>=null):Void;
+
+	/**
+		https://reactjs.org/docs/hooks-reference.html#usereducer
+	**/
+	public static function useReducer(reducer:Dynamic, initialArg:Dynamic, init:Dynamic):Array<Dynamic>;
+
+	/**
+		https://reactjs.org/docs/hooks-reference.html#usedebugvalue
+	**/
+	public static function useDebugValue(value:Dynamic):Void;
 }
 
 /**
